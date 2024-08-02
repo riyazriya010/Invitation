@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js"> 
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,87 +56,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	<!-- <style>
-		.date-container {
-		  display: flex;
-		  justify-content: center; /* Center the content */
-		  gap: 10px; /* Add a gap between items */
-		}
-	  
-		.date-container h3 {
-		  background-color: #F14E95;
-		  color: white;
-		  border-radius: 50%;
-		  padding: 10px;
-		  margin: 0; /* Remove default margin */
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  width: 50px; /* Circle size */
-		  height: 50px; /* Circle size */
-		  line-height: 1; /* Align text vertically */
-		}
-
-		body {
-    font-family: 'Arial, sans-serif'; /* Change font family as needed */
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Text color */
-    text-align: center; /* Center align text */
-    margin: 0;
-    padding: 20px;
-  }
-
-  #fh5co-couple {
-    max-width: 800px; /* Constrain width */
-    margin: 0 auto; /* Center container */
-    background: white; /* Background for content area */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 10px; /* Rounded corners */
-  }
-
-  h2 {
-    font-family: 'Great Vibes', cursive; /* Use a decorative font */
-    color: #c06c84; /* Themed color */
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-family: 'Playfair Display', serif; /* Stylish serif font */
-    color: #6c5b7b; /* Complementary color */
-    margin: 5px 0;
-  }
-
-  .couple-wrap {
-    display: flex;
-    justify-content: space-around; /* Space images evenly */
-    margin-top: 20px;
-  }
-
-  .couple-half {
-    width: 45%; /* Make each half take up 45% */
-  }
-
-  .couple-half img {
-    border-radius: 50%; /* Circular images */
-    border: 3px solid #c06c84; /* Border around images */
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .heart {
-    font-size: 30px;
-    color: #c06c84;
-    margin: 20px 0;
-  }
-	  </style> -->
 
 	  <style>
         body {
@@ -152,7 +68,7 @@
         }
 
         .fh5co-nav {
-            background-color: #F14E95;
+            background-color: rgba(0, 0, 0, 0.4);
             padding: 10px 0;
         }
 
@@ -307,23 +223,22 @@
 	</head>
 	<body>
 		
-	<!-- <div class="fh5co-loader"></div> -->
+	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-            <!-- <nav class="fh5co-nav" role="navigation">
+            <nav class="fh5co-nav" role="navigation">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
                             <div id="fh5co-logo">
-                                <a href="index.html">Wedding<strong>.</strong></a>
-                            </div>
-                            <div class="collapse-icon">
-                                <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
+                                <a href="index.html">Wedding</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav> -->
+            </nav>
+
+            
         
             <header id="fh5co-header" class="fh5co-cover" role="banner">
                 <div class="overlay"></div>
@@ -408,6 +323,7 @@
             </div>
         </div>
 
+     
         <footer id="fh5co-footer" role="contentinfo">
             <div class="container">
                 <div class="row">
@@ -451,25 +367,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
-
+	
 	</body>
 </html>
 
